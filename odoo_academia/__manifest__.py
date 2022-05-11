@@ -34,7 +34,7 @@
         #'report/session_report_templates.xml',
     ],
     'demo': [
-        #'demo/academy_demo.xml',
+        'demo/demo_isra.xml',
     ],
     #Add license to remove License Warning
     'license': 'OPL-1'
