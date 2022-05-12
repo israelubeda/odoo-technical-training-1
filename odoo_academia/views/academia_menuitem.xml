@@ -22,15 +22,30 @@
                 </p>
             </field>
         </record-->
+        <record model="ir.actions.act_window" id="nave_list_action">
+            <field name="name">Nave Espacial</field>
+            <field name="res_model">nave.espacial</field>
+            <field name="view_mode">tree,form,pivot</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crear tu primera nave espacial
+                </p>
+            </field>
+        </record>        
+        
+        
+        
+        
         <menuitem name="Odoo Academia"
                   id="menu_academia"
                   sequence="1"/>
 
         <menuitem id="menu_academia_sub" name="Odoo Academia" parent="menu_academia" sequence="2"/>
+        <!--menuitem id="menu_espacio_sub" name="Espacio" parent="menu_academia" sequence="3"/-->
 
         <menuitem id="menu_academia_cursos" name="Cursos" parent="menu_academia_sub" sequence="3"
                   action="curso_list_action"/>
-        <!--menuitem id="menu_academy_session" name="Sessions" parent="menu_academy_sub" sequence="4"
-                  action="session_list_action"/-->
+        <menuitem id="menu_academy_session" name="Nave" parent="menu_academia_sub" sequence="4"
+                  action="nave_list_action"/>
     </data>
 </odoo> 
