@@ -24,7 +24,7 @@
     'data': [
         'security/seguridad.xml',
         'security/ir.model.access.csv',
-        #'views/academy_menuitems.xml',
+        'views/academia_menuitem.xml',
         #'views/course_views.xml',
         #'views/session_views.xml',
         #'views/sales_views_inherit.xml',
