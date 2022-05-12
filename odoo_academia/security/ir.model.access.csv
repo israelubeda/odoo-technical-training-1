@@ -1,0 +1,10 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+curso_admin,curso admin,model_academia_curso,group_academia_admin,1,1,1,1
+curso_read_all, curso lectura,model_academia_curso,,1,0,0,0
+nave_administrador, Nave administrador,model_nave_espacial,group_administrador_nave,1,1,1,1
+nave_tripulacion, Nave tripulacion,model_nave_espacial,group_tripulacion_nave,1,1,1,0
+nave_usuario, Nave usuario,model_nave_espacial,group_usuario_nave,1,0,0,0
+libro_bibliotecario, Libro bibliotecario,model_libro,group_bibliotecario_libro,1,1,1,1
+libro_cliente, Libro cliente,model_libro,group_cliente_libro,1,0,0,0
+tarea_jefe, Tarea Jefe,model_tarea,group_jefe_tarea,1,1,1,1
+tarea_voluntario, Tarea Voluntario,model_tarea,group_voluntario_tarea,1,1,1,0
