@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_academia_admin" model="res.groups">
+        <field name="name">Academia / Admin</field>
+    </record>
+
+    <record id="only_active_modify" model="ir.rule">
+        <field name="name">Solo puede ser modificado por usuarios activos</field>
+        <field name="perm_read" eval="0"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="1"/>
+        <field name="domain_force">[('active','=',True)]</field>
+        <field name="model_id" ref="model_academia_curso"/>
+    </record>
+    
+    <record id="group_administrador_nave" model="res.groups">
+        <field name="name">Nave espacial / Admin</field>
+    </record>
+ 
+        
+    <record id="group_tripulacion_nave" model="res.groups">
+        <field name="name">Nave espacial / Tripulacion espacial</field>
+    </record>
+    
+        
+    <record id="group_usuario_nave" model="res.groups">
+        <field name="name">Nave espacial / Usuario general</field>
+    </record>
+    
+    <record id="group_bibliotecario_libro" model="res.groups">
+        <field name="name">Libro / Bibliotecario</field>
+    </record>
+
+    <record id="group_cliente_libro" model="res.groups">
+        <field name="name">Libro / Cliente</field>
+    </record>
+
+    <record id="group_jefe_tarea" model="res.groups">
+        <field name="name">Tareas / Jefe</field>
+    </record>
+    
+    <record id="group_voluntario_tarea" model="res.groups">
+        <field name="name">Tareas / Voluntario</field>
+    </record>    
+    
+    
+</odoo> 
