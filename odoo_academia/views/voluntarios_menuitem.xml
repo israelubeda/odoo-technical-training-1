@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="voluntario_list_action">
+            <field name="name">Tareas</field>
+            <field name="res_model">tarea</field>
+            <field name="view_mode">tree,form,pivot</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Crear tu primera tarea
+                </p>
+            </field>
+        </record>
+        
+
+        
+        
+        
+        <menuitem name="Aplicacion Coop"
+                  id="menu_tarea"
+                  sequence="1"/>
+
+        <menuitem id="menu_tarea_sub" name="Modelo tareas" parent="menu_tarea" sequence="2"/>
+
+        <menuitem id="menu_tarea_cursos" name="Voluntarios" parent="menu_tarea_sub" sequence="3"
+                  action="voluntario_list_action"/>
+
+    </data>
+</odoo> 
