@@ -22,9 +22,10 @@
     'depends': ['sale'],
     
     'data': [
-        #'security/academy_security.xml',
-        #'security/ir.model.access.csv',
-        #'views/academy_menuitems.xml',
+        'security/seguridad.xml',
+        'security/ir.model.access.csv',
+        'views/academia_menuitem.xml',
+        #'views/nave_menuitem.xml',
         #'views/course_views.xml',
         #'views/session_views.xml',
         #'views/sales_views_inherit.xml',
@@ -34,7 +35,7 @@
         #'report/session_report_templates.xml',
     ],
     'demo': [
-        #'demo/academy_demo.xml',
+        'demo/demo_isra.xml',
     ],
     #Add license to remove License Warning
     'license': 'OPL-1'
