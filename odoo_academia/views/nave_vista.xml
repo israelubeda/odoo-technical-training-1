@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>        
+        <record model="ir.ui.view" id="nave_view_form">
+            <field name="name">nave.espacial.form</field>
+            <field name="model">nave.espacial</field>
+            <field name="arch" type="xml">
+                <form string="Formulario Nave">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group>
+                                <field name="active"/>
+                                <field name="tipo_combustible"/>
+                                <field name="tipo_barco"/>
+                            </group>
+                            <group>
+                                <field name="cant_pasajeros"/>
+                                <field name="dimen_largo"/>
+                                <field name="dimen_ancho"/>
+                                <field name="dimen_altura"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Descripcion">
+                                <field name="description"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="nave_view_list">
+            <field name="name">nave.espacial.list</field>
+            <field name="model">nave.espacial</field>
+            <field name="arch" type="xml">
+                <tree string="Lista nave">
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="nave_view_search">
+            <field name="name">nave.espacial.search</field>
+            <field name="model">nave.espacial</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="description"/>
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo> 
