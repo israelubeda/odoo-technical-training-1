@@ -22,7 +22,7 @@
                 </p>
             </field>
         </record-->
-        <record model="ir.actions.act_window" id="nave_list_action">
+        <!--record model="ir.actions.act_window" id="nave_list_action">
             <field name="name">Nave Espacial</field>
             <field name="res_model">nave.espacial</field>
             <field name="view_mode">tree,form,pivot</field>
@@ -31,7 +31,7 @@
                     Crear tu primera nave espacial
                 </p>
             </field>
-        </record>        
+        </record-->        
         
         
         
@@ -45,7 +45,7 @@
 
         <menuitem id="menu_academia_cursos" name="Cursos" parent="menu_academia_sub" sequence="3"
                   action="curso_list_action"/>
-        <menuitem id="menu_academy_session" name="Nave" parent="menu_academia_sub" sequence="4"
-                  action="nave_list_action"/>
+        <!--menuitem id="menu_academy_session" name="Nave" parent="menu_academia_sub" sequence="4"
+                  action="nave_list_action"/-->
     </data>
 </odoo> 
