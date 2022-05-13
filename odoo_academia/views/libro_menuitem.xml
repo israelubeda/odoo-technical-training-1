@@ -18,11 +18,12 @@
         
         <menuitem name="Gestion biblioteca"
                   id="menu_libro"
-                  sequence="1"/>
+                  sequence="1"
+                  web_icon='odoo_academia,static/description/icon.png'/>
 
-        <menuitem id="menu_libro_sub" name="Odoo Libros sub" parent="menu_academia" sequence="2"/>
+        <menuitem id="menu_libro_sub" name="Odoo Libros sub" parent="menu_libro" sequence="2"/>
 
-        <menuitem id="menu_academia_cursos" name="Libros" parent="menu_libro_sub" sequence="3"
+        <menuitem id="menu_libros_cursos" name="Libros" parent="menu_libro_sub" sequence="3"
                   action="libro_list_action"/>
 
     </data>
