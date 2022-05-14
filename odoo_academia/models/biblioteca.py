@@ -13,4 +13,5 @@ class biblioteca(models.Model):
     editorial = fields.Text(string="Editorial :")
     year = fields.Integer(string="Año de edicion :")
     isbn = fields.Char(string="ISBN :")
-    genero = fields.Text(string="Genero :")    
+    genero = fields.Text(string="Genero :")
+    textoNota = fields.Text(string="Texto de Nota:")

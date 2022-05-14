@@ -30,6 +30,7 @@
         'views/voluntarios_menuitem.xml',
         'views/nave_menuitem.xml',
         'views/nave_vista.xml',
+        'views/libro_vista.xml',
         #'views/session_views.xml',
         #'views/sales_views_inherit.xml',
         #'views/product_views_inherit.xml',
